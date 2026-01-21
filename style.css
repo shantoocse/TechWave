@@ -99,6 +99,7 @@ body{
     margin-top: 20px;
 
 }
+
 .hero-title {
     font-size: 60px;
     font-weight: 800;
@@ -199,3 +200,80 @@ body{
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.6);
 }
+
+.features-section {
+    padding: 100px 0;
+    color: #fff;
+}
+.section-title{
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+}
+.features-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 270px;
+    grid-gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-auto-flow: dense;
+    
+}
+.icon-wrapper{
+    height: 60px;
+    width: 60px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.features-card{
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 32px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease;
+    text-align: left
+}
+.card-audio {
+    grid-row: span 2;
+    gap: 20px;
+}
+.bonus{
+    grid-column: span 2;
+    gap: 20px;
+}
+
+.card-interview {
+    grid-column: span 2;
+    align-items: flex-start;
+    gap: 20px;
+}
+.icon-wrapper {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+}
+.icon-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-top: 30px;
+}
+.features-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.features-card p {
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.6;
+    font-size: 15px;
+}
+
